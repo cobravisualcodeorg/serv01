@@ -12,7 +12,7 @@ class f :#line:7
         O000O000O0OO0O000 .j =""#line:13
         O000O000O0OO0O000 .k =a .Label (OO000OOOO00000OOO ,text ="")#line:14
         O000O000O0OO0O000 .k .pack (pady =5 )#line:15
-        O000O000O0OO0O000 .display_message ("Bienvenidos a FastExe")#line:16
+        O000O000O0OO0O000 .display_message ("Bienvenidos a FastExecutable")#line:16
         O000O000O0OO0O000 .h .after (2000 ,lambda :O000O000O0OO0O000 .display_message ("SELECCIONA TU ARCHIVO.py"))#line:17
         O000O000O0OO0O000 .h .after (3000 ,lambda :O000O000O0OO0O000 .display_message ("PRESIONA CONVERTIR EJECUTABLE Y LISTO"))#line:18
         O000O000O0OO0O000 .h .after (4000 ,lambda :O000O000O0OO0O000 .display_message (""))#line:19
