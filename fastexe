@@ -1,97 +1,108 @@
-import tkinter as a #line:1
-from tkinter import filedialog as b #line:2
-from threading import Thread as c #line:3
-import os as d #line:4
-from PyInstaller import __main__ as e #line:5
-class f :#line:7
-    def __init__ (O000O000O0OO0O000 ,OO000OOOO00000OOO ):#line:8
-        O000O000O0OO0O000 .h =OO000OOOO00000OOO #line:9
-        O000O000O0OO0O000 .h .title ("FastExecutable Oficial")#line:10
-        O000O000O0OO0O000 .i =a .Text (O000O000O0OO0O000 .h ,wrap =a .NONE )#line:11
-        O000O000O0OO0O000 .i .pack (expand =True ,fill ='both')#line:12
-        O000O000O0OO0O000 .j =""#line:13
-        O000O000O0OO0O000 .k =a .Label (OO000OOOO00000OOO ,text ="")#line:14
-        O000O000O0OO0O000 .k .pack (pady =5 )#line:15
-        O000O000O0OO0O000 .display_message ("Bienvenidos a FastExecutable")#line:16
-        O000O000O0OO0O000 .h .after (2000 ,lambda :O000O000O0OO0O000 .display_message ("SELECCIONA TU ARCHIVO.py"))#line:17
-        O000O000O0OO0O000 .h .after (3000 ,lambda :O000O000O0OO0O000 .display_message ("PRESIONA CONVERTIR EJECUTABLE Y LISTO"))#line:18
-        O000O000O0OO0O000 .h .after (4000 ,lambda :O000O000O0OO0O000 .display_message (""))#line:19
-        O000O000O0OO0O000 .l =a .Button (OO000OOOO00000OOO ,text ="Seleccionar Archivo",command =O000O000O0OO0O000 .m )#line:20
-        O000O000O0OO0O000 .l .pack (pady =20 ,side =a .LEFT )#line:21
-        O000O000O0OO0O000 .n =a .Button (OO000OOOO00000OOO ,text ="Convertir a Ejecutable",state =a .DISABLED ,command =O000O000O0OO0O000 .o )#line:22
-        O000O000O0OO0O000 .n .pack (pady =10 ,side =a .LEFT )#line:23
-        O000O000O0OO0O000 .p =a .Label (OO000OOOO00000OOO ,text ="")#line:24
-        O000O000O0OO0O000 .p .pack (pady =10 )#line:25
-        O000O000O0OO0O000 .h .geometry ("600x500")#line:26
-        O000O000O0OO0O000 .h .resizable (width =False ,height =False )#line:27
-    def m (OOO00OOO0OOOOOOO0 ):#line:29
-        OOO00OOO0OOOOOOO0 .j =b .askopenfilename ()#line:30
-        if OOO00OOO0OOOOOOO0 .j :#line:31
-            OOO00OOO0OOOOOOO0 .k .config (text =f"Archivo seleccionado: {d.path.basename(OOO00OOO0OOOOOOO0.j)}")#line:32
-            OOO00OOO0OOOOOOO0 .n .config (state =a .NORMAL )#line:33
-            OOO00OOO0OOOOOOO0 .p .config (text =f"Archivo seleccionado: {OOO00OOO0OOOOOOO0.j}")#line:34
-    def o (O0OO0O0O0OOO0O0OO ):#line:36
-        O0OO0O0O0OOO0O0OO .display_message ("Comenzando proceso ")#line:37
-        O0OO0O0O0OOO0O0OO .h .after (2000 ,lambda :O0OO0O0O0OOO0O0OO .display_message ("Esto suele tardar unos minutos"))#line:38
-        O0OO0O0O0OOO0O0OO .h .after (3000 ,lambda :O0OO0O0O0OOO0O0OO .display_message ("Cargando Dependencias"))#line:39
-        O0OO0O0O0OOO0O0OO .h .after (4000 ,lambda :O0OO0O0O0OOO0O0OO .display_message ("Generando exe |"))#line:40
-        O0OO0O0O0OOO0O0OO .h .after (5000 ,lambda :O0OO0O0O0OOO0O0OO .display_message ("Generando exe /"))#line:41
-        O0OO0O0O0OOO0O0OO .h .after (6000 ,lambda :O0OO0O0O0OOO0O0OO .display_message ("Generando exe |"))#line:42
-        O0OO0O0O0OOO0O0OO .h .after (7000 ,lambda :O0OO0O0O0OOO0O0OO .display_message ("Generando exe /"))#line:43
-        O0OO0O0O0OOO0O0OO .h .after (8000 ,lambda :O0OO0O0O0OOO0O0OO .display_message ("Verificando Librerias"))#line:44
-        O0OO0O0O0OOO0O0OO .h .after (10000 ,lambda :O0OO0O0O0OOO0O0OO .display_message ("Verificando Librerias."))#line:45
-        O0OO0O0O0OOO0O0OO .h .after (11000 ,lambda :O0OO0O0O0OOO0O0OO .display_message ("Verificando Librerias.."))#line:46
-        O0OO0O0O0OOO0O0OO .h .after (12000 ,lambda :O0OO0O0O0OOO0O0OO .display_message ("Verificando Librerias..."))#line:47
-        O0OO0O0O0OOO0O0OO .h .after (13000 ,lambda :O0OO0O0O0OOO0O0OO .display_message ("Verificando Librerias...."))#line:48
-        O0OO0O0O0OOO0O0OO .h .after (14000 ,lambda :O0OO0O0O0OOO0O0OO .display_message ("Verificando Librerias....."))#line:49
-        O0OO0O0O0OOO0O0OO .h .after (15000 ,lambda :O0OO0O0O0OOO0O0OO .display_message ("Verificando Librerias......."))#line:50
-        O0OO0O0O0OOO0O0OO .h .after (16000 ,lambda :O0OO0O0O0OOO0O0OO .display_message ("Verificando Librerias........."))#line:51
-        O0OO0O0O0OOO0O0OO .h .after (17000 ,lambda :O0OO0O0O0OOO0O0OO .display_message ("Validando dependencias de sistema /"))#line:52
-        O0OO0O0O0OOO0O0OO .h .after (18000 ,lambda :O0OO0O0O0OOO0O0OO .display_message (" Validando dependencias de sistema |"))#line:53
-        O0OO0O0O0OOO0O0OO .h .after (19000 ,lambda :O0OO0O0O0OOO0O0OO .display_message ("Validando dependencias de sistema /"))#line:54
-        O0OO0O0O0OOO0O0OO .h .after (20000 ,lambda :O0OO0O0O0OOO0O0OO .display_message ("Validando dependencias de sistema |"))#line:55
-        O0OO0O0O0OOO0O0OO .h .after (21000 ,lambda :O0OO0O0O0OOO0O0OO .display_message ("Finalizando proceso de conversión."))#line:56
-        O0OO0O0O0OOO0O0OO .h .after (22000 ,lambda :O0OO0O0O0OOO0O0OO .display_message ("Finalizando proceso de conversión.."))#line:57
-        O0OO0O0O0OOO0O0OO .h .after (23000 ,lambda :O0OO0O0O0OOO0O0OO .display_message ("Finalizando proceso de conversión..."))#line:58
-        O0OO0O0O0OOO0O0OO .h .after (24000 ,lambda :O0OO0O0O0OOO0O0OO .display_message ("Finalizando proceso de conversión...."))#line:59
-        O0OO0O0O0OOO0O0OO .h .after (25000 ,lambda :O0OO0O0O0OOO0O0OO .display_message ("Finalizando ajustes y optimizaciones"))#line:60
-        O0OO0O0O0OOO0O0OO .h .after (26000 ,lambda :O0OO0O0O0OOO0O0OO .display_message ("Se le indicara cuando la conversión se halla realizado. "))#line:61
-        O0OO0O0O0OOO0O0OO .h .after (27000 ,lambda :O0OO0O0O0OOO0O0OO .display_message (""))#line:62
-        if not O0OO0O0O0OOO0O0OO .j :#line:63
-            O0OO0O0O0OOO0O0OO .p .config (text ="Por favor, selecciona un archivo antes de convertir.")#line:64
-            return #line:65
-        O0OO0O0O0OOO0O0OO .n .config (state =a .DISABLED )#line:66
-        OOO0OOOOO0OO00OOO =c (target =O0OO0O0O0OOO0O0OO .q )#line:67
-        OOO0OOOOO0OO00OOO .start ()#line:68
-    def q (O0O000OOOOOOO00OO ):#line:70
-        try :#line:71
-            if not O0O000OOOOOOO00OO .j :#line:72
-                raise ValueError ("No se ha seleccionado ningún archivo.")#line:73
-            O0O000OOOOOOO00OO .convert_file_to_executable (O0O000OOOOOOO00OO .j )#line:74
-        except Exception as OO00000O00OO0OOO0 :#line:75
-            O0O000OOOOOOO00OO .display_message (f"Error durante la conversión: {str(OO00000O00OO0OOO0)}")#line:76
-        finally :#line:77
-            O0O000OOOOOOO00OO .n .config (state =a .NORMAL )#line:78
-            O0O000OOOOOOO00OO .h .after (1000 ,lambda :O0O000OOOOOOO00OO .display_message (f"Archivo en {d.path.dirname(d.path.abspath(O0O000OOOOOOO00OO.j))}"))#line:79
-            O0O000OOOOOOO00OO .h .after (2000 ,lambda :O0O000OOOOOOO00OO .display_message ("Busca la carpeta Dist en la ubicacion Indicada"))#line:80
-            O0O000OOOOOOO00OO .h .after (3000 ,lambda :O0O000OOOOOOO00OO .display_message (f"Archivo en {d.path.dirname(d.path.abspath(O0O000OOOOOOO00OO.j))}"))#line:81
-    def convert_file_to_executable (OOOO000000O0O0OO0 ,OOO000OO00000000O ):#line:83
-        try :#line:84
-            OOO0OOO0O00OOO0O0 =e .run (['--onefile','--noconsole',d .path .abspath (OOO000OO00000000O )])#line:85
-            if OOO0OOO0O00OOO0O0 is not None :#line:86
-                O000O0000O0O0O000 =d .path .join (d .path .dirname (OOO0OOO0O00OOO0O0 ),'dist')#line:87
-                O0O0OO00O0OOOO000 =d .path .join (O000O0000O0O0O000 ,d .path .basename (OOO000OO00000000O ).replace ('.py','.exe'))#line:88
-                OOOO000000O0O0OO0 .display_message (f"Listo, se ha convertido el archivo con éxito. Se encuentra en la ubicación: {O0O0OO00O0OOOO000}")#line:89
-            else :#line:90
-                OOOO000000O0O0OO0 .display_message ("Conversión completada")#line:91
-        except Exception as OOOOOO00OOOOOO00O :#line:92
-            raise OOOOOO00OOOOOO00O #line:93
-    def display_message (O0000000O00OOOO0O ,O0000O00O0OOO000O ,clear =True ):#line:95
-        if clear :#line:96
-            O0000000O00OOOO0O .i .delete ('1.0',a .END )#line:97
-        else :#line:98
-            O0000000O00OOOO0O .i .insert (a .END ,O0000O00O0OOO000O +"\n")#line:99
-if __name__ =="__main__":#line:101
-    s =a .Tk ()#line:102
-    t =f (s )#line:103
-    s .mainloop ()#line:104
+import tkinter as tk #line:1:import tkinter as tk
+from tkinter import filedialog #line:2:from tkinter import filedialog
+from threading import Thread #line:3:from threading import Thread
+import os #line:4:import os
+from PIL import Image ,ImageTk #line:5:from PIL import Image, ImageTk
+from PyInstaller import __main__ as pyinstaller_main #line:6:from PyInstaller import __main__ as pyinstaller_main
+import sys #line:7:import sys
+class App :#line:9:class App:
+    def __init__ (O0O0O0O000O00OOOO ,OOO00OO00OO000000 ):#line:10:def __init__(self, root):
+        O0O0O0O000O00OOOO .root =OOO00OO00OO000000 #line:11:self.root = root
+        O0O0O0O000O00OOOO .root .title ("FastExecutable")#line:12:self.root.title("FastExecutable")
+        O0O0O0O000O00OOOO .result_text =tk .Text (O0O0O0O000O00OOOO .root ,wrap =tk .NONE )#line:15:self.result_text = tk.Text(self.root, wrap=tk.NONE)
+        O0O0O0O000O00OOOO .result_text .pack (expand =True ,fill ='both')#line:16:self.result_text.pack(expand=True, fill='both')
+        O0O0O0O000O00OOOO .file_path =""#line:18:self.file_path = ""
+        O0O0O0O000O00OOOO .file_path_label =tk .Label (OOO00OO00OO000000 ,text ="")#line:19:self.file_path_label = tk.Label(root, text="")
+        O0O0O0O000O00OOOO .file_path_label .pack (pady =5 )#line:20:self.file_path_label.pack(pady=5)
+        O0O0O0O000O00OOOO .display_message ("SELECCIONA TU ARCHIVO .py")#line:23:self.display_message("SELECCIONA TU ARCHIVO .py")
+        O0O0O0O000O00OOOO .root .after (2000 ,lambda :O0O0O0O000O00OOOO .display_message ("PRESIONA CONVERTIR EJECUTABLE Y LISTO"))#line:24:self.root.after(2000, lambda: self.display_message("PRESIONA CONVERTIR EJECUTABLE Y LISTO"))
+        O0O0O0O000O00OOOO .select_button =tk .Button (OOO00OO00OO000000 ,text ="Seleccionar Archivo",command =O0O0O0O000O00OOOO .select_file )#line:27:self.select_button = tk.Button(root, text="Seleccionar Archivo", command=self.select_file)
+        O0O0O0O000O00OOOO .select_button .pack (pady =20 ,side =tk .LEFT )#line:28:self.select_button.pack(pady=20, side=tk.LEFT)
+        O0O0O0O000O00OOOO .convert_button =tk .Button (OOO00OO00OO000000 ,text ="Convertir a Ejecutable",state =tk .DISABLED ,command =O0O0O0O000O00OOOO .convert_to_executable )#line:31:self.convert_button = tk.Button(root, text="Convertir a Ejecutable", state=tk.DISABLED, command=self.convert_to_executable)
+        O0O0O0O000O00OOOO .convert_button .pack (pady =10 ,side =tk .LEFT )#line:32:self.convert_button.pack(pady=10, side=tk.LEFT)
+        O0O0O0O000O00OOOO .status_label =tk .Label (OOO00OO00OO000000 ,text ="")#line:35:self.status_label = tk.Label(root, text="")
+        O0O0O0O000O00OOOO .status_label .pack (pady =10 )#line:36:self.status_label.pack(pady=10)
+        O0O0O0O000O00OOOO .root .geometry ("600x500")#line:39:self.root.geometry("600x500")
+        O0O0O0O000O00OOOO .root .resizable (width =False ,height =False )#line:40:self.root.resizable(width=False, height=False)
+    def select_file (OO0O00O0O00000O00 ):#line:42:def select_file(self):
+        OO0O00O0O00000O00 .file_path =filedialog .askopenfilename ()#line:43:self.file_path = filedialog.askopenfilename()
+        if OO0O00O0O00000O00 .file_path :#line:44:if self.file_path:
+            OO0O00O0O00000O00 .file_path_label .config (text =f"Archivo seleccionado: {os.path.basename(OO0O00O0O00000O00.file_path)}")#line:45:self.file_path_label.config(text=f"Archivo seleccionado: {os.path.basename(self.file_path)}")
+            OO0O00O0O00000O00 .convert_button .config (state =tk .NORMAL )#line:46:self.convert_button.config(state=tk.NORMAL)
+            OO0O00O0O00000O00 .status_label .config (text =f"Archivo seleccionado: {OO0O00O0O00000O00.file_path}")#line:47:self.status_label.config(text=f"Archivo seleccionado: {self.file_path}")
+    def convert_to_executable (OOO0OOOOO0O0O0000 ):#line:49:def convert_to_executable(self):
+        OOO0OOOOO0O0O0000 .display_message ("Comenzando proceso ")#line:50:self.display_message("Comenzando proceso ")
+        OOO0OOOOO0O0O0000 .root .after (2000 ,lambda :OOO0OOOOO0O0O0000 .display_message ("Esto suele tardar unos minutos"))#line:51:self.root.after(2000, lambda: self.display_message("Esto suele tardar unos minutos"))
+        OOO0OOOOO0O0O0000 .root .after (3000 ,lambda :OOO0OOOOO0O0O0000 .display_message ("Cargando Dependencias"))#line:52:self.root.after(3000, lambda: self.display_message("Cargando Dependencias"))
+        OOO0OOOOO0O0O0000 .root .after (4000 ,lambda :OOO0OOOOO0O0O0000 .display_message ("Generando exe |"))#line:53:self.root.after(4000, lambda: self.display_message("Generando exe |"))
+        OOO0OOOOO0O0O0000 .root .after (5000 ,lambda :OOO0OOOOO0O0O0000 .display_message ("Generando exe /"))#line:54:self.root.after(5000, lambda: self.display_message("Generando exe /"))
+        OOO0OOOOO0O0O0000 .root .after (6000 ,lambda :OOO0OOOOO0O0O0000 .display_message ("Generando exe |"))#line:55:self.root.after(6000, lambda: self.display_message("Generando exe |"))
+        OOO0OOOOO0O0O0000 .root .after (7000 ,lambda :OOO0OOOOO0O0O0000 .display_message ("Generando exe /"))#line:56:self.root.after(7000, lambda: self.display_message("Generando exe /"))
+        OOO0OOOOO0O0O0000 .root .after (8000 ,lambda :OOO0OOOOO0O0O0000 .display_message ("Verificando Librerias"))#line:57:self.root.after(8000, lambda: self.display_message("Verificando Librerias"))
+        OOO0OOOOO0O0O0000 .root .after (10000 ,lambda :OOO0OOOOO0O0O0000 .display_message ("Verificando Librerias."))#line:58:self.root.after(10000, lambda: self.display_message("Verificando Librerias."))
+        OOO0OOOOO0O0O0000 .root .after (11000 ,lambda :OOO0OOOOO0O0O0000 .display_message ("Verificando Librerias.."))#line:59:self.root.after(11000, lambda: self.display_message("Verificando Librerias.."))
+        OOO0OOOOO0O0O0000 .root .after (12000 ,lambda :OOO0OOOOO0O0O0000 .display_message ("Verificando Librerias..."))#line:60:self.root.after(12000, lambda: self.display_message("Verificando Librerias..."))
+        OOO0OOOOO0O0O0000 .root .after (13000 ,lambda :OOO0OOOOO0O0O0000 .display_message ("Verificando Librerias...."))#line:61:self.root.after(13000, lambda: self.display_message("Verificando Librerias...."))
+        OOO0OOOOO0O0O0000 .root .after (14000 ,lambda :OOO0OOOOO0O0O0000 .display_message ("Verificando Librerias....."))#line:62:self.root.after(14000, lambda: self.display_message("Verificando Librerias....."))
+        OOO0OOOOO0O0O0000 .root .after (15000 ,lambda :OOO0OOOOO0O0O0000 .display_message ("Verificando Librerias......."))#line:63:self.root.after(15000, lambda: self.display_message("Verificando Librerias......."))
+        OOO0OOOOO0O0O0000 .root .after (16000 ,lambda :OOO0OOOOO0O0O0000 .display_message ("Verificando Librerias........."))#line:64:self.root.after(16000, lambda: self.display_message("Verificando Librerias........."))
+        OOO0OOOOO0O0O0000 .root .after (17000 ,lambda :OOO0OOOOO0O0O0000 .display_message ("Validando dependencias de sistema /"))#line:65:self.root.after(17000, lambda: self.display_message("Validando dependencias de sistema /"))
+        OOO0OOOOO0O0O0000 .root .after (18000 ,lambda :OOO0OOOOO0O0O0000 .display_message (" Validando dependencias de sistema |"))#line:66:self.root.after(18000, lambda: self.display_message(" Validando dependencias de sistema |"))
+        OOO0OOOOO0O0O0000 .root .after (19000 ,lambda :OOO0OOOOO0O0O0000 .display_message ("Validando dependencias de sistema /"))#line:67:self.root.after(19000, lambda: self.display_message("Validando dependencias de sistema /"))
+        OOO0OOOOO0O0O0000 .root .after (20000 ,lambda :OOO0OOOOO0O0O0000 .display_message ("Validando dependencias de sistema |"))#line:68:self.root.after(20000, lambda: self.display_message("Validando dependencias de sistema |"))
+        OOO0OOOOO0O0O0000 .root .after (21000 ,lambda :OOO0OOOOO0O0O0000 .display_message ("Finalizando proceso de conversión."))#line:69:self.root.after(21000, lambda: self.display_message("Finalizando proceso de conversión."))
+        OOO0OOOOO0O0O0000 .root .after (22000 ,lambda :OOO0OOOOO0O0O0000 .display_message ("Finalizando proceso de conversión.."))#line:70:self.root.after(22000, lambda: self.display_message("Finalizando proceso de conversión.."))
+        OOO0OOOOO0O0O0000 .root .after (23000 ,lambda :OOO0OOOOO0O0O0000 .display_message ("Finalizando proceso de conversión..."))#line:71:self.root.after(23000, lambda: self.display_message("Finalizando proceso de conversión..."))
+        OOO0OOOOO0O0O0000 .root .after (24000 ,lambda :OOO0OOOOO0O0O0000 .display_message ("Finalizando proceso de conversión...."))#line:72:self.root.after(24000, lambda: self.display_message("Finalizando proceso de conversión...."))
+        OOO0OOOOO0O0O0000 .root .after (25000 ,lambda :OOO0OOOOO0O0O0000 .display_message ("Finalizando ajustes y optimizaciones"))#line:73:self.root.after(25000, lambda: self.display_message("Finalizando ajustes y optimizaciones"))
+        OOO0OOOOO0O0O0000 .root .after (26000 ,lambda :OOO0OOOOO0O0O0000 .display_message ("Se le indicara cuando la conversión se halla realizado. "))#line:74:self.root.after(26000, lambda: self.display_message("Se le indicara cuando la conversión se halla realizado. "))
+        if not OOO0OOOOO0O0O0000 .file_path :#line:79:if not self.file_path:
+            OOO0OOOOO0O0O0000 .status_label .config (text ="Por favor, selecciona un archivo antes de convertir.")#line:80:self.status_label.config(text="Por favor, selecciona un archivo antes de convertir.")
+            return #line:81:return
+        OOO0OOOOO0O0O0000 .convert_button .config (state =tk .DISABLED )#line:84:self.convert_button.config(state=tk.DISABLED)
+        OOO0000O00000OO0O =Thread (target =OOO0OOOOO0O0O0000 .run_conversion )#line:87:conversion_thread = Thread(target=self.run_conversion)
+        OOO0000O00000OO0O .start ()#line:88:conversion_thread.start()
+    def run_conversion (OO00OO00OO00000O0 ):#line:90:def run_conversion(self):
+        try :#line:91:try:
+            if not OO00OO00OO00000O0 .file_path :#line:92:if not self.file_path:
+                raise ValueError ("No se ha seleccionado ningún archivo.")#line:93:raise ValueError("No se ha seleccionado ningún archivo.")
+            OO00OO00OO00000O0 .convert_file_to_executable (OO00OO00OO00000O0 .file_path )#line:96:self.convert_file_to_executable(self.file_path)
+        except Exception as OOOO0O00OOOOO00O0 :#line:97:except Exception as e:
+            OO00OO00OO00000O0 .display_message (f"Error durante la conversión: {str(OOOO0O00OOOOO00O0)}")#line:98:self.display_message(f"Error durante la conversión: {str(e)}")
+        finally :#line:99:finally:
+            OO00OO00OO00000O0 .convert_button .config (state =tk .NORMAL )#line:101:self.convert_button.config(state=tk.NORMAL)
+            OO00OO00OO00000O0 .root .after (1000 ,lambda :OO00OO00OO00000O0 .display_message (f"Archivo en {os.path.dirname(os.path.abspath(OO00OO00OO00000O0.file_path))}"))#line:102:self.root.after(1000, lambda: self.display_message(f"Archivo en {os.path.dirname(os.path.abspath(self.file_path))}"))
+            OO00OO00OO00000O0 .root .after (2000 ,lambda :OO00OO00OO00000O0 .display_message ("Busca la carpeta Dist en la ubicacion Indicada"))#line:103:self.root.after(2000, lambda: self.display_message("Busca la carpeta Dist en la ubicacion Indicada"))
+            OO00OO00OO00000O0 .root .after (3000 ,lambda :OO00OO00OO00000O0 .display_message (f"Archivo en {os.path.dirname(os.path.abspath(OO00OO00OO00000O0.file_path))}"))#line:104:self.root.after(3000, lambda: self.display_message(f"Archivo en {os.path.dirname(os.path.abspath(self.file_path))}"))
+    def convert_file_to_executable (O0OO00O000OOO0OOO ,O0OO00O0OOO000O0O ):#line:105:def convert_file_to_executable(self, file_path):
+        try :#line:106:try:
+            OOOO00OO00O0000OO =pyinstaller_main .run (['--onefile',os .path .abspath (O0OO00O0OOO000O0O )])#line:110:])
+            if OOOO00OO00O0000OO is not None :#line:112:if spec_file is not None:
+                OOOO0OOOO000O0O0O =os .path .join (os .path .dirname (OOOO00OO00O0000OO ),'dist')#line:113:dist_folder = os.path.join(os.path.dirname(spec_file), 'dist')
+                O0OOOOOO00O0O00O0 =os .path .join (OOOO0OOOO000O0O0O ,os .path .basename (O0OO00O0OOO000O0O ).replace ('.py','.exe'))#line:114:executable_path = os.path.join(dist_folder, os.path.basename(file_path).replace('.py', '.exe'))
+                O0OO00O000OOO0OOO .display_message (f" convercion éxitosa. Su archivo Exe encuentra en la ubicación: {O0OOOOOO00O0O00O0}")#line:116:self.display_message(f" convercion éxitosa. Su archivo Exe encuentra en la ubicación: {executable_path}")
+            else :#line:117:else:
+                O0OO00O000OOO0OOO .display_message ("Conversión completada")#line:119:self.display_message("Conversión completada")
+        except Exception as OO0O0O00O0OO000O0 :#line:122:except Exception as e:
+            raise OO0O0O00O0OO000O0 #line:123:raise e
+    def display_message (O0O0O0000O0OO0OO0 ,O0O000000OOO0O00O ,O0O00O00O0O0OOO0O =True ):#line:125:def display_message(self, message, clear=True):
+        if O0O00O00O0O0OOO0O :#line:126:if clear:
+            O0O0O0000O0OO0OO0 .result_text .delete ('1.0',tk .END )#line:127:self.result_text.delete('1.0', tk.END)  # Limpiar el contenido actual
+            O0O0O0000O0OO0OO0 .root .after (1000 ,lambda :O0O0O0000O0OO0OO0 .result_text .insert (tk .END ,O0O000000OOO0O00O +"\n"))#line:130:self.root.after(1000, lambda: self.result_text.insert(tk.END, message + "\n"))
+        else :#line:131:else:
+            O0O0O0000O0OO0OO0 .result_text .insert (tk .END ,O0O000000OOO0O00O +"\n")#line:132:self.result_text.insert(tk.END, message + "\n")
+def resource_path (O000O0OOO0OO0O00O ):#line:134:def resource_path(relative_path):
+    ""#line:135:"""Get absolute path to resource, works for dev and for PyInstaller"""
+    try :#line:136:try:
+        OOO0O00O0O0O000OO =sys ._MEIPASS #line:138:base_path = sys._MEIPASS
+    except AttributeError :#line:139:except AttributeError:
+        OOO0O00O0O0O000OO =os .path .abspath (".")#line:140:base_path = os.path.abspath(".")
+    return os .path .join (OOO0O00O0O0O000OO ,O000O0OOO0OO0O00O )#line:142:return os.path.join(base_path, relative_path)
+if __name__ =="__main__":#line:144:if __name__ == "__main__":
+    root =tk .Tk ()#line:145:root = tk.Tk()  
+    image =Image .new ("RGBA",(16 ,16 ),(255 ,255 ,255 ,0 ))#line:148:image = Image.new("RGBA", (16, 16), (255, 255, 255, 0))
+    tk_image =ImageTk .PhotoImage (image )#line:149:tk_image = ImageTk.PhotoImage(image)
+    root .tk .call ('wm','iconphoto',root ._w ,tk_image )#line:152:root.tk.call('wm', 'iconphoto', root._w, tk_image)
+    app =App (root )#line:155:app = App(root)
+    root .mainloop ()#line:157:root.mainloop()
+
